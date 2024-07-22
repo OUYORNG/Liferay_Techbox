@@ -1,0 +1,1048 @@
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+21-Jul-2024 15:54:43.876 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [462] milliseconds
+Loading jar:file:/home/orng/Documents/sample-liferay-workspace/bundles/tomcat/webapps/ROOT/WEB-INF/shielded-container-lib/portal-impl.jar!/system.properties
+Loading jar:file:/home/orng/Documents/sample-liferay-workspace/bundles/tomcat/webapps/ROOT/WEB-INF/shielded-container-lib/portal-impl.jar!/portal.properties
+Loading file:/home/orng/Documents/sample-liferay-workspace/bundles/portal-ext.properties
+Loading file:/home/orng/Documents/sample-liferay-workspace/bundles/portal-setup-wizard.properties
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+2024-07-21 15:54:45.292 INFO  [main][PortalContextLoaderListener:114] JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/home/orng/Documents/sample-liferay-workspace/bundles/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/home/orng/Documents/sample-liferay-workspace/bundles/tomcat -Dcatalina.home=/home/orng/Documents/sample-liferay-workspace/bundles/tomcat -Djava.io.tmpdir=/home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp
+2024-07-21 15:54:47.261 WARN  [SystemExecutorServiceUtil-1][DialectDetector:73] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.
+2024-07-21 15:54:47.263 INFO  [SystemExecutorServiceUtil-1][DialectDetector:144] Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.7
+2024-07-21 15:54:47.373 INFO  [main][ModuleFrameworkImpl:1352] Starting initial bundles
+2024-07-21 15:54:47.870 INFO  [SystemExecutorServiceUtil-1][InterpolationConfigurationPlugin:109] Configured directory for secrets: /home/orng/Documents/sample-liferay-workspace/bundles/osgi/configs
+2024-07-21 15:54:48.216 INFO  [main][ModuleFrameworkImpl:1642] Started initial bundles
+2024-07-21 15:54:48.217 INFO  [main][ModuleFrameworkImpl:1687] Starting dynamic bundles
+2024-07-21 15:54:49.330 WARN  [Start Level: Equinox Container: 9fb7c860-cc2f-4262-baa1-90dcec9fce52][SidecarManager:72] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2024-07-21 15:54:52.916 INFO  [main][ModuleFrameworkImpl:1710] Started dynamic bundles
+2024-07-21 15:54:52.916 INFO  [main][ModuleFrameworkImpl:1717] Starting web bundles
+2024-07-21 15:54:54.588 INFO  [main][ModuleFrameworkImpl:1771] Started web bundles
+2024-07-21 15:54:54.589 INFO  [main][ModuleFrameworkImpl:283] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+
+    __    ____________________  _____  __
+   / /   /  _/ ____/ ____/ __ \/   \ \/ /
+  / /    / // /_  / __/ / /_/ / /| |\  /
+ / /____/ // __/ / /___/ _, _/ ___ |/ /
+/_____/___/_/   /_____/_/ |_/_/  |_/_/
+
+Starting Liferay Community Edition Portal 7.4.3.120 CE GA120 (June 12, 2024)
+
+2024-07-21 15:54:55.833 INFO  [main][StartupHelperUtil:97] There are no patches installed
+2024-07-21 15:54:56.240 INFO  [main][LoggingTimer:74] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2024-07-21 15:54:56.320 INFO  [main][LoggingTimer:35] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 80 ms
+2024-07-21 15:54:57.539 INFO  [main][AutoDeployDir:152] Auto deploy scanner started for /home/orng/Documents/sample-liferay-workspace/bundles/deploy
+2024-07-21 15:55:02.954 INFO  [SystemExecutorServiceUtil-4][Sidecar:103] Sidecar Elasticsearch liferay started at 127.0.0.1:9201
+21-Jul-2024 15:55:07.439 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [23558] milliseconds
+2024-07-21 15:55:09.867 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240721155509693CESAZQOO/admin-theme.war
+2024-07-21 15:55:10.361 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240721155509693CESAZQOO/admin-theme.war copied successfully
+2024-07-21 15:55:12.717 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240721155512708YAEDBKAT/classic-theme.war
+2024-07-21 15:55:13.052 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240721155512708YAEDBKAT/classic-theme.war copied successfully
+2024-07-21 15:55:14.100 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240721155514090HNQYRUPZ/dialect-theme.war
+2024-07-21 15:55:14.477 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240721155514090HNQYRUPZ/dialect-theme.war copied successfully
+2024-07-21 15:55:15.532 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240721155515520UGKCVPDJ/minium-theme.war
+2024-07-21 15:55:15.892 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240721155515520UGKCVPDJ/minium-theme.war copied successfully
+2024-07-21 15:55:16.924 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240721155516911OJZHFAHX/speedwell-theme.war
+2024-07-21 15:55:17.382 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240721155516911OJZHFAHX/speedwell-theme.war copied successfully
+2024-07-21 15:55:17.362 ERROR [http-nio-8080-exec-2][VirtualHostFilter:383] java.io.IOException: Broken pipe
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: Broken pipe
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:345) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.connector.OutputBuffer.appendByteArray(OutputBuffer.java:750) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:671) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:380) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:358) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:103) ~[catalina.jar:9.0.87]
+	at com.liferay.portal.kernel.internal.servlet.RestrictedByteArrayCacheOutputStream.flush(RestrictedByteArrayCacheOutputStream.java:57) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.RestrictedByteBufferCacheServletResponse.flushCache(RestrictedByteBufferCacheServletResponse.java:37) ~[portal-kernel.jar:?]
+	at com.liferay.portal.servlet.filters.etag.ETagFilter._postProcessETag(ETagFilter.java:113) ~[portal-impl.jar:?]
+	at com.liferay.portal.servlet.filters.etag.ETagFilter.processFilter(ETagFilter.java:93) ~[portal-impl.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138) ~[portal-kernel.jar:?]
+	at com.liferay.portal.servlet.filters.autologin.AutoLoginFilter.processFilter(AutoLoginFilter.java:253) ~[portal-impl.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138) ~[portal-kernel.jar:?]
+	at com.liferay.portal.monitoring.internal.servlet.filter.MonitoringFilter.processFilter(MonitoringFilter.java:116) ~[?:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176) ~[?:?]
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145) ~[?:?]
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92) ~[?:?]
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389) ~[?:?]
+	at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:86) ~[?:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:69) ~[com.liferay.shielded.container.impl.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294) ~[catalina.jar:9.0.87]
+	at com.liferay.portal.servlet.filters.virtualhost.VirtualHostFilter.processFilter(VirtualHostFilter.java:380) [portal-impl.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92) [portal-kernel.jar:?]
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176) [urlrewritefilter-4.0.4.jar:4.0.4]
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145) [urlrewritefilter-4.0.4.jar:4.0.4]
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92) [urlrewritefilter-4.0.4.jar:4.0.4]
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389) [urlrewritefilter-4.0.4.jar:4.0.4]
+	at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:86) [bundleFile:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:168) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:168) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:109) [portal-kernel.jar:?]
+	at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:69) [com.liferay.shielded.container.impl.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179) [catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154) [catalina.jar:9.0.87]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168) [catalina.jar:9.0.87]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [catalina.jar:9.0.87]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) [catalina.jar:9.0.87]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) [catalina.jar:9.0.87]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [catalina.jar:9.0.87]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [catalina.jar:9.0.87]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) [catalina.jar:9.0.87]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) [tomcat-coyote.jar:9.0.87]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-coyote.jar:9.0.87]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) [tomcat-coyote.jar:9.0.87]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786) [tomcat-coyote.jar:9.0.87]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-coyote.jar:9.0.87]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.87]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.87]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-util.jar:9.0.87]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47) ~[?:?]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113) ~[?:?]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:79) ~[?:?]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:50) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:466) ~[?:?]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:136) ~[tomcat-coyote.jar:9.0.87]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1423) ~[tomcat-coyote.jar:9.0.87]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:775) ~[tomcat-coyote.jar:9.0.87]
+	at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:600) ~[tomcat-coyote.jar:9.0.87]
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:544) ~[tomcat-coyote.jar:9.0.87]
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:540) ~[tomcat-coyote.jar:9.0.87]
+	at org.apache.coyote.http11.filters.IdentityOutputFilter.doWrite(IdentityOutputFilter.java:73) ~[tomcat-coyote.jar:9.0.87]
+	at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:193) ~[tomcat-coyote.jar:9.0.87]
+	at org.apache.coyote.Response.doWrite(Response.java:608) ~[tomcat-coyote.jar:9.0.87]
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:333) ~[catalina.jar:9.0.87]
+	... 80 more
+*ERROR* Worker thread CM Configuration Updater did not terminate within 5 seconds; trying to kill
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+22-Jul-2024 01:19:14.514 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [602] milliseconds
+Loading jar:file:/home/orng/Documents/sample-liferay-workspace/bundles/tomcat/webapps/ROOT/WEB-INF/shielded-container-lib/portal-impl.jar!/system.properties
+Loading jar:file:/home/orng/Documents/sample-liferay-workspace/bundles/tomcat/webapps/ROOT/WEB-INF/shielded-container-lib/portal-impl.jar!/portal.properties
+Loading file:/home/orng/Documents/sample-liferay-workspace/bundles/portal-ext.properties
+Loading file:/home/orng/Documents/sample-liferay-workspace/bundles/portal-setup-wizard.properties
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+2024-07-22 01:19:16.151 INFO  [main][PortalContextLoaderListener:114] JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/home/orng/Documents/sample-liferay-workspace/bundles/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/home/orng/Documents/sample-liferay-workspace/bundles/tomcat -Dcatalina.home=/home/orng/Documents/sample-liferay-workspace/bundles/tomcat -Djava.io.tmpdir=/home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp
+2024-07-22 01:19:17.910 WARN  [SystemExecutorServiceUtil-1][DialectDetector:73] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.
+2024-07-22 01:19:17.911 INFO  [SystemExecutorServiceUtil-1][DialectDetector:144] Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.7
+2024-07-22 01:19:18.011 INFO  [main][ModuleFrameworkImpl:1352] Starting initial bundles
+2024-07-22 01:19:18.265 INFO  [SystemExecutorServiceUtil-6][InterpolationConfigurationPlugin:109] Configured directory for secrets: /home/orng/Documents/sample-liferay-workspace/bundles/osgi/configs
+2024-07-22 01:19:18.671 INFO  [main][ModuleFrameworkImpl:1642] Started initial bundles
+2024-07-22 01:19:18.672 INFO  [main][ModuleFrameworkImpl:1687] Starting dynamic bundles
+2024-07-22 01:19:19.490 WARN  [Start Level: Equinox Container: a8b5b15b-2d3b-4d8f-a0ec-0dc43c277812][SidecarManager:72] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2024-07-22 01:19:23.120 INFO  [main][ModuleFrameworkImpl:1710] Started dynamic bundles
+2024-07-22 01:19:23.120 INFO  [main][ModuleFrameworkImpl:1717] Starting web bundles
+2024-07-22 01:19:24.379 INFO  [main][ModuleFrameworkImpl:1771] Started web bundles
+2024-07-22 01:19:24.379 INFO  [main][ModuleFrameworkImpl:283] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+
+    __    ____________________  _____  __
+   / /   /  _/ ____/ ____/ __ \/   \ \/ /
+  / /    / // /_  / __/ / /_/ / /| |\  /
+ / /____/ // __/ / /___/ _, _/ ___ |/ /
+/_____/___/_/   /_____/_/ |_/_/  |_/_/
+
+Starting Liferay Community Edition Portal 7.4.3.120 CE GA120 (June 12, 2024)
+
+2024-07-22 01:19:25.647 INFO  [main][StartupHelperUtil:97] There are no patches installed
+2024-07-22 01:19:25.799 INFO  [main][LoggingTimer:74] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2024-07-22 01:19:25.855 INFO  [main][LoggingTimer:35] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 55 ms
+2024-07-22 01:19:26.409 INFO  [main][AutoDeployDir:152] Auto deploy scanner started for /home/orng/Documents/sample-liferay-workspace/bundles/deploy
+2024-07-22 01:19:32.260 INFO  [SystemExecutorServiceUtil-1][Sidecar:103] Sidecar Elasticsearch liferay started at 127.0.0.1:9201
+22-Jul-2024 01:19:36.540 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [22019] milliseconds
+2024-07-22 01:19:39.600 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240722011939493VKRERGFZ/admin-theme.war
+2024-07-22 01:19:40.303 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240722011939493VKRERGFZ/admin-theme.war copied successfully
+2024-07-22 01:19:42.092 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240722011942081CDFZSSCM/classic-theme.war
+22-Jul-2024 01:19:42.401 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Error during mapping
+	java.lang.NullPointerException
+		at org.apache.catalina.mapper.Mapper.internalMapWrapper(Mapper.java:830)
+		at org.apache.catalina.mapper.Mapper.map(Mapper.java:685)
+		at org.apache.catalina.core.ApplicationContext.getRequestDispatcher(ApplicationContext.java:464)
+		at org.apache.catalina.core.ApplicationContextFacade.getRequestDispatcher(ApplicationContextFacade.java:215)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at com.liferay.portal.kernel.util.ProxyUtil$DelegateInvocationHandler.invoke(ProxyUtil.java:244)
+		at com.sun.proxy.$Proxy3.getRequestDispatcher(Unknown Source)
+		at com.liferay.portal.kernel.servlet.DirectRequestDispatcherFactoryUtil._getetRequestDispatcher(DirectRequestDispatcherFactoryUtil.java:95)
+		at com.liferay.portal.kernel.servlet.DirectRequestDispatcherFactoryUtil._getRequestDispatcher(DirectRequestDispatcherFactoryUtil.java:109)
+		at com.liferay.portal.kernel.servlet.DirectRequestDispatcherFactoryUtil.getRequestDispatcher(DirectRequestDispatcherFactoryUtil.java:35)
+		at com.liferay.taglib.util.IncludeTag.includePage(IncludeTag.java:397)
+		at com.liferay.taglib.util.IncludeTag.include(IncludeTag.java:375)
+		at com.liferay.taglib.util.IncludeTag.doInclude(IncludeTag.java:208)
+		at com.liferay.taglib.util.IncludeTag.doEndTag(IncludeTag.java:79)
+		at org.apache.jsp.captcha.simplecaptcha_jsp._jspService(simplecaptcha_jsp.java:183)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:411)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:473)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:377)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at com.liferay.portal.osgi.web.servlet.jsp.compiler.internal.JspServlet.service(JspServlet.java:310)
+		at com.liferay.portal.osgi.web.servlet.jsp.compiler.internal.JspServlet.service(JspServlet.java:319)
+		at org.eclipse.equinox.http.servlet.internal.registration.EndpointRegistration.service(EndpointRegistration.java:147)
+		at org.eclipse.equinox.http.servlet.internal.servlet.ResponseStateHandler.processRequest(ResponseStateHandler.java:63)
+		at org.eclipse.equinox.http.servlet.internal.context.DispatchTargets.doDispatch(DispatchTargets.java:120)
+		at org.eclipse.equinox.http.servlet.internal.servlet.RequestDispatcherAdaptor.include(RequestDispatcherAdaptor.java:48)
+		at com.liferay.portal.kernel.servlet.DirectServletPathRegisterDispatcher.include(DirectServletPathRegisterDispatcher.java:57)
+		at com.liferay.portal.kernel.servlet.DirectRequestDispatcherFactoryUtil$IndirectRequestDispatcher.include(DirectRequestDispatcherFactoryUtil.java:179)
+		at com.liferay.portal.kernel.servlet.ClassLoaderRequestDispatcherWrapper.doDispatch(ClassLoaderRequestDispatcherWrapper.java:64)
+		at com.liferay.portal.kernel.servlet.ClassLoaderRequestDispatcherWrapper.include(ClassLoaderRequestDispatcherWrapper.java:45)
+		at com.liferay.taglib.util.IncludeTag.includePage(IncludeTag.java:400)
+		at com.liferay.taglib.util.IncludeTag.include(IncludeTag.java:375)
+		at com.liferay.taglib.util.IncludeTag.doInclude(IncludeTag.java:208)
+		at com.liferay.taglib.util.IncludeTag.doEndTag(IncludeTag.java:79)
+		at org.apache.jsp.captcha.page_jsp._jspService(page_jsp.java:132)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:411)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:473)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:377)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at com.liferay.portal.osgi.web.servlet.jsp.compiler.internal.JspServlet.service(JspServlet.java:310)
+		at com.liferay.portal.osgi.web.servlet.jsp.compiler.internal.JspServlet.service(JspServlet.java:319)
+		at org.eclipse.equinox.http.servlet.internal.registration.EndpointRegistration.service(EndpointRegistration.java:147)
+		at org.eclipse.equinox.http.servlet.internal.servlet.ResponseStateHandler.processRequest(ResponseStateHandler.java:63)
+		at org.eclipse.equinox.http.servlet.internal.context.DispatchTargets.doDispatch(DispatchTargets.java:120)
+		at org.eclipse.equinox.http.servlet.internal.servlet.RequestDispatcherAdaptor.include(RequestDispatcherAdaptor.java:48)
+		at com.liferay.portal.kernel.servlet.DirectServletPathRegisterDispatcher.include(DirectServletPathRegisterDispatcher.java:57)
+		at com.liferay.portal.kernel.servlet.DirectRequestDispatcherFactoryUtil$IndirectRequestDispatcher.include(DirectRequestDispatcherFactoryUtil.java:179)
+		at com.liferay.portal.kernel.servlet.ClassLoaderRequestDispatcherWrapper.doDispatch(ClassLoaderRequestDispatcherWrapper.java:64)
+		at com.liferay.portal.kernel.servlet.ClassLoaderRequestDispatcherWrapper.include(ClassLoaderRequestDispatcherWrapper.java:45)
+		at com.liferay.taglib.util.IncludeTag.includePage(IncludeTag.java:400)
+		at com.liferay.taglib.util.IncludeTag.include(IncludeTag.java:375)
+		at com.liferay.taglib.util.IncludeTag.doInclude(IncludeTag.java:208)
+		at com.liferay.taglib.util.IncludeTag.doEndTag(IncludeTag.java:79)
+		at freemarker.ext.jsp.TagTransformModel$TagWriter.endEvaluation(TagTransformModel.java:405)
+		at freemarker.ext.jsp.TagTransformModel$TagWriter.afterBody(TagTransformModel.java:393)
+		at freemarker.core.Environment.visitAndTransform(Environment.java:503)
+		at freemarker.core.UnifiedCall.accept(UnifiedCall.java:104)
+		at freemarker.core.Environment.visit(Environment.java:335)
+		at freemarker.core.Environment.visit(Environment.java:341)
+		at freemarker.core.Environment.process(Environment.java:314)
+		at freemarker.template.Template.process(Template.java:383)
+		at com.liferay.portal.template.freemarker.internal.FreeMarkerTemplate.lambda$processTemplate$0(FreeMarkerTemplate.java:148)
+		at com.liferay.portal.template.freemarker.internal.FreeMarkerManager.render(FreeMarkerManager.java:355)
+		at com.liferay.portal.template.freemarker.internal.FreeMarkerTemplate.processTemplate(FreeMarkerTemplate.java:135)
+		at com.liferay.portal.template.engine.BaseTemplate.processTemplate(BaseTemplate.java:117)
+		at com.liferay.fragment.entry.processor.freemarker.FreeMarkerFragmentEntryValidator.validateFragmentEntryHTML(FreeMarkerFragmentEntryValidator.java:130)
+		at com.liferay.fragment.internal.processor.FragmentEntryProcessorRegistryImpl.validateFragmentEntryHTML(FragmentEntryProcessorRegistryImpl.java:222)
+		at com.liferay.fragment.internal.contributor.FragmentCollectionContributorRegistryImpl._validateFragmentEntry(FragmentCollectionContributorRegistryImpl.java:343)
+		at com.liferay.fragment.internal.contributor.FragmentCollectionContributorRegistryImpl.access$500(FragmentCollectionContributorRegistryImpl.java:62)
+		at com.liferay.fragment.internal.contributor.FragmentCollectionContributorRegistryImpl$FragmentCollectionContributorServiceTrackerCustomizer.addingService(FragmentCollectionContributorRegistryImpl.java:429)
+		at com.liferay.fragment.internal.contributor.FragmentCollectionContributorRegistryImpl$FragmentCollectionContributorServiceTrackerCustomizer.addingService(FragmentCollectionContributorRegistryImpl.java:402)
+		at com.liferay.osgi.service.tracker.collections.internal.map.ServiceTrackerMapImpl$DefaultEmitter.emit(ServiceTrackerMapImpl.java:200)
+		at com.liferay.osgi.service.tracker.collections.map.PropertyServiceReferenceMapper.map(PropertyServiceReferenceMapper.java:41)
+		at com.liferay.osgi.service.tracker.collections.internal.map.ServiceTrackerMapImpl$ServiceReferenceServiceTrackerCustomizer.addingService(ServiceTrackerMapImpl.java:256)
+		at com.liferay.osgi.service.tracker.collections.internal.map.ServiceTrackerMapImpl$ServiceReferenceServiceTrackerCustomizer.addingService(ServiceTrackerMapImpl.java:244)
+		at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:943)
+		at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+		at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+		at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+		at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:321)
+		at com.liferay.osgi.service.tracker.collections.internal.ServiceTrackerManager.open(ServiceTrackerManager.java:58)
+		at com.liferay.osgi.service.tracker.collections.internal.map.ServiceTrackerMapImpl.values(ServiceTrackerMapImpl.java:104)
+		at com.liferay.fragment.internal.contributor.FragmentCollectionContributorRegistryImpl.getFragmentEntries(FragmentCollectionContributorRegistryImpl.java:130)
+		at com.liferay.fragment.internal.renderer.FragmentEntryFragmentRenderer._getContributedFragmentEntry(FragmentEntryFragmentRenderer.java:116)
+		at com.liferay.fragment.internal.renderer.FragmentEntryFragmentRenderer._getFragmentEntryLink(FragmentEntryFragmentRenderer.java:128)
+		at com.liferay.fragment.internal.renderer.FragmentEntryFragmentRenderer._renderFragmentEntryLink(FragmentEntryFragmentRenderer.java:342)
+		at com.liferay.fragment.internal.renderer.FragmentEntryFragmentRenderer.render(FragmentEntryFragmentRenderer.java:103)
+		at com.liferay.fragment.internal.renderer.FragmentRendererControllerImpl.render(FragmentRendererControllerImpl.java:97)
+		at com.liferay.layout.taglib.servlet.taglib.renderer.LayoutStructureRenderer._renderFragmentStyledLayoutStructureItem(LayoutStructureRenderer.java:1105)
+		at com.liferay.layout.taglib.servlet.taglib.renderer.LayoutStructureRenderer._renderLayoutStructure(LayoutStructureRenderer.java:1238)
+		at com.liferay.layout.taglib.servlet.taglib.renderer.LayoutStructureRenderer._renderColumnLayoutStructureItem(LayoutStructureRenderer.java:588)
+		at com.liferay.layout.taglib.servlet.taglib.renderer.LayoutStructureRenderer._renderLayoutStructure(LayoutStructureRenderer.java:1168)
+		at com.liferay.layout.taglib.servlet.taglib.renderer.LayoutStructureRenderer._renderRowStyledLayoutStructureItem(LayoutStructureRenderer.java:1325)
+		at com.liferay.layout.taglib.servlet.taglib.renderer.LayoutStructureRenderer._renderLayoutStructure(LayoutStructureRenderer.java:1255)
+		at com.liferay.layout.taglib.servlet.taglib.renderer.LayoutStructureRenderer._renderContainerStyledLayoutStructureItem(LayoutStructureRenderer.java:719)
+		at com.liferay.layout.taglib.servlet.taglib.renderer.LayoutStructureRenderer._renderLayoutStructure(LayoutStructureRenderer.java:1186)
+		at com.liferay.layout.taglib.servlet.taglib.renderer.LayoutStructureRenderer._renderContainerStyledLayoutStructureItem(LayoutStructureRenderer.java:719)
+		at com.liferay.layout.taglib.servlet.taglib.renderer.LayoutStructureRenderer._renderLayoutStructure(LayoutStructureRenderer.java:1186)
+		at com.liferay.layout.taglib.servlet.taglib.renderer.LayoutStructureRenderer._renderLayoutStructure(LayoutStructureRenderer.java:1140)
+		at com.liferay.layout.taglib.servlet.taglib.renderer.LayoutStructureRenderer.render(LayoutStructureRenderer.java:121)
+		at com.liferay.layout.taglib.servlet.taglib.RenderLayoutStructureTag.processStartTag(RenderLayoutStructureTag.java:100)
+		at com.liferay.taglib.util.IncludeTag.doStartTag(IncludeTag.java:107)
+		at org.apache.jsp.render_005ffragment_005flayout.page_jsp._jspService(page_jsp.java:215)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:411)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:473)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:377)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at com.liferay.portal.osgi.web.servlet.jsp.compiler.internal.JspServlet.service(JspServlet.java:310)
+		at com.liferay.portal.osgi.web.servlet.jsp.compiler.internal.JspServlet.service(JspServlet.java:319)
+		at org.eclipse.equinox.http.servlet.internal.registration.EndpointRegistration.service(EndpointRegistration.java:147)
+		at org.eclipse.equinox.http.servlet.internal.servlet.ResponseStateHandler.processRequest(ResponseStateHandler.java:63)
+		at org.eclipse.equinox.http.servlet.internal.context.DispatchTargets.doDispatch(DispatchTargets.java:120)
+		at org.eclipse.equinox.http.servlet.internal.servlet.RequestDispatcherAdaptor.include(RequestDispatcherAdaptor.java:48)
+		at com.liferay.portal.kernel.servlet.DirectServletPathRegisterDispatcher.include(DirectServletPathRegisterDispatcher.java:57)
+		at com.liferay.portal.kernel.servlet.DirectRequestDispatcherFactoryUtil$IndirectRequestDispatcher.include(DirectRequestDispatcherFactoryUtil.java:179)
+		at com.liferay.portal.kernel.servlet.ClassLoaderRequestDispatcherWrapper.doDispatch(ClassLoaderRequestDispatcherWrapper.java:64)
+		at com.liferay.portal.kernel.servlet.ClassLoaderRequestDispatcherWrapper.include(ClassLoaderRequestDispatcherWrapper.java:45)
+		at com.liferay.taglib.util.IncludeTag.includePage(IncludeTag.java:400)
+		at com.liferay.taglib.util.IncludeTag.include(IncludeTag.java:375)
+		at com.liferay.taglib.util.IncludeTag.doInclude(IncludeTag.java:208)
+		at com.liferay.taglib.util.IncludeTag.doEndTag(IncludeTag.java:79)
+		at org.apache.jsp.layout.view.content_jsp._jspService(content_jsp.java:201)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:411)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:473)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:377)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at com.liferay.portal.osgi.web.servlet.jsp.compiler.internal.JspServlet.service(JspServlet.java:310)
+		at com.liferay.portal.osgi.web.servlet.jsp.compiler.internal.JspServlet.service(JspServlet.java:319)
+		at org.eclipse.equinox.http.servlet.internal.registration.EndpointRegistration.service(EndpointRegistration.java:147)
+		at org.eclipse.equinox.http.servlet.internal.servlet.ResponseStateHandler.processRequest(ResponseStateHandler.java:63)
+		at org.eclipse.equinox.http.servlet.internal.context.DispatchTargets.doDispatch(DispatchTargets.java:120)
+		at org.eclipse.equinox.http.servlet.internal.servlet.RequestDispatcherAdaptor.include(RequestDispatcherAdaptor.java:48)
+		at com.liferay.portal.kernel.servlet.TransferHeadersHelperUtil$TransferHeadersRequestDispatcher.include(TransferHeadersHelperUtil.java:152)
+		at com.liferay.layout.type.controller.content.internal.layout.type.controller.ContentLayoutTypeController.includeLayoutContent(ContentLayoutTypeController.java:184)
+		at com.liferay.portal.model.impl.LayoutImpl.includeLayoutContent(LayoutImpl.java:1020)
+		at com.liferay.portal.action.LayoutAction.processLayout(LayoutAction.java:427)
+		at com.liferay.portal.action.LayoutAction.execute(LayoutAction.java:165)
+		at com.liferay.portal.struts.PortalRequestProcessor._process(PortalRequestProcessor.java:375)
+		at com.liferay.portal.struts.PortalRequestProcessor.process(PortalRequestProcessor.java:142)
+		at com.liferay.portal.internal.servlet.MainServlet.doGet(MainServlet.java:194)
+		at javax.servlet.http.HttpServlet.doHead(HttpServlet.java:186)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:552)
+		at com.liferay.portal.internal.servlet.MainServlet.service(MainServlet.java:582)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at com.liferay.shielded.container.internal.proxy.ServletWrapper.service(ServletWrapper.java:103)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:117)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.init.servlet.filter.internal.InitFilter.processFilter(InitFilter.java:45)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.servlet.filters.password.modified.PasswordModifiedFilter.processFilter(PasswordModifiedFilter.java:47)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.servlet.filters.lockout.LockoutFilter.processFilter(LockoutFilter.java:49)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.servlet.filters.secure.BaseAuthFilter.processFilter(BaseAuthFilter.java:330)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.monitoring.internal.servlet.filter.MonitoringFilter.processFilter(MonitoringFilter.java:116)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389)
+		at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:86)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:109)
+		at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:69)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+		at com.liferay.friendly.url.internal.servlet.FriendlyURLServlet.service(FriendlyURLServlet.java:554)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at com.liferay.portal.servlet.ServletAdapter.service(ServletAdapter.java:89)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at com.liferay.shielded.container.internal.proxy.ServletWrapper.service(ServletWrapper.java:103)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:117)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.init.servlet.filter.internal.InitFilter.processFilter(InitFilter.java:45)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.i18n.filter.internal.I18nFilter.processFilter(I18nFilter.java:371)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.servlet.filters.password.modified.PasswordModifiedFilter.processFilter(PasswordModifiedFilter.java:47)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.servlet.filters.lockout.LockoutFilter.processFilter(LockoutFilter.java:49)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.servlet.filters.secure.BaseAuthFilter.processFilter(BaseAuthFilter.java:330)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.servlet.filters.cache.CacheFilter.processFilter(CacheFilter.java:440)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.servlet.filters.etag.ETagFilter.processFilter(ETagFilter.java:78)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.servlet.filters.autologin.AutoLoginFilter.processFilter(AutoLoginFilter.java:253)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.monitoring.internal.servlet.filter.MonitoringFilter.processFilter(MonitoringFilter.java:116)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389)
+		at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:86)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:109)
+		at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:69)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+		at com.liferay.portal.servlet.filters.virtualhost.VirtualHostFilter.processFilter(VirtualHostFilter.java:380)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389)
+		at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:86)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:168)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:168)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:109)
+		at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:69)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+2024-07-22 01:19:42.423 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240722011942081CDFZSSCM/classic-theme.war copied successfully
+2024-07-22 01:19:42.407 ERROR [http-nio-8080-exec-1][IncludeTag:119] Current URL / generates exception: null
+java.lang.NullPointerException: null
+	at com.liferay.portal.kernel.servlet.DirectServletPathRegisterDispatcher.include(DirectServletPathRegisterDispatcher.java:57) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.DirectRequestDispatcherFactoryUtil$IndirectRequestDispatcher.include(DirectRequestDispatcherFactoryUtil.java:179) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.ClassLoaderRequestDispatcherWrapper.doDispatch(ClassLoaderRequestDispatcherWrapper.java:64) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.ClassLoaderRequestDispatcherWrapper.include(ClassLoaderRequestDispatcherWrapper.java:45) ~[portal-kernel.jar:?]
+	at com.liferay.taglib.util.IncludeTag.includePage(IncludeTag.java:400) ~[bundleFile:?]
+	at com.liferay.taglib.util.IncludeTag.include(IncludeTag.java:375) ~[bundleFile:?]
+	at com.liferay.taglib.util.IncludeTag.doInclude(IncludeTag.java:208) ~[bundleFile:?]
+	at com.liferay.taglib.util.IncludeTag.doEndTag(IncludeTag.java:79) ~[bundleFile:?]
+	at org.apache.jsp.captcha.simplecaptcha_jsp._jspService(simplecaptcha_jsp.java:183) ~[?:?]
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111) ~[jasper.jar:9.0.87]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[servlet-api.jar:4.0.FR]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:411) ~[jasper.jar:9.0.87]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:473) ~[jasper.jar:9.0.87]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:377) ~[jasper.jar:9.0.87]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[servlet-api.jar:4.0.FR]
+	at com.liferay.portal.osgi.web.servlet.jsp.compiler.internal.JspServlet.service(JspServlet.java:310) ~[bundleFile:?]
+	at com.liferay.portal.osgi.web.servlet.jsp.compiler.internal.JspServlet.service(JspServlet.java:319) ~[bundleFile:?]
+	at org.eclipse.equinox.http.servlet.internal.registration.EndpointRegistration.service(EndpointRegistration.java:147) ~[?:?]
+	at org.eclipse.equinox.http.servlet.internal.servlet.ResponseStateHandler.processRequest(ResponseStateHandler.java:63) ~[?:?]
+	at org.eclipse.equinox.http.servlet.internal.context.DispatchTargets.doDispatch(DispatchTargets.java:120) ~[?:?]
+2024-07-22 01:19:43.273 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240722011943263TUUFZUYN/dialect-theme.war
+2024-07-22 01:19:43.938 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240722011943263TUUFZUYN/dialect-theme.war copied successfully
+22-Jul-2024 01:19:45.056 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Error during mapping
+	java.lang.NullPointerException
+		at org.apache.catalina.mapper.Mapper.internalMapWrapper(Mapper.java:830)
+		at org.apache.catalina.mapper.Mapper.map(Mapper.java:685)
+		at org.apache.catalina.core.ApplicationContext.getRequestDispatcher(ApplicationContext.java:464)
+		at org.apache.catalina.core.ApplicationContextFacade.getRequestDispatcher(ApplicationContextFacade.java:215)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at com.liferay.portal.kernel.util.ProxyUtil$DelegateInvocationHandler.invoke(ProxyUtil.java:244)
+		at com.sun.proxy.$Proxy3.getRequestDispatcher(Unknown Source)
+		at com.liferay.portal.kernel.servlet.DirectRequestDispatcherFactoryUtil._getetRequestDispatcher(DirectRequestDispatcherFactoryUtil.java:95)
+		at com.liferay.portal.kernel.servlet.DirectRequestDispatcherFactoryUtil._getRequestDispatcher(DirectRequestDispatcherFactoryUtil.java:109)
+		at com.liferay.portal.kernel.servlet.DirectRequestDispatcherFactoryUtil.getRequestDispatcher(DirectRequestDispatcherFactoryUtil.java:35)
+		at com.liferay.portal.struts.StrutsUtil.forward(StrutsUtil.java:53)
+		at com.liferay.portal.struts.PortalRequestProcessor._internalModuleRelativeForward(PortalRequestProcessor.java:328)
+		at com.liferay.portal.struts.PortalRequestProcessor._process(PortalRequestProcessor.java:379)
+		at com.liferay.portal.struts.PortalRequestProcessor.process(PortalRequestProcessor.java:142)
+		at com.liferay.portal.internal.servlet.MainServlet.doGet(MainServlet.java:194)
+		at javax.servlet.http.HttpServlet.doHead(HttpServlet.java:186)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:552)
+		at com.liferay.portal.internal.servlet.MainServlet.service(MainServlet.java:582)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at com.liferay.shielded.container.internal.proxy.ServletWrapper.service(ServletWrapper.java:103)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:117)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.init.servlet.filter.internal.InitFilter.processFilter(InitFilter.java:45)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.servlet.filters.password.modified.PasswordModifiedFilter.processFilter(PasswordModifiedFilter.java:47)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.servlet.filters.lockout.LockoutFilter.processFilter(LockoutFilter.java:49)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.servlet.filters.secure.BaseAuthFilter.processFilter(BaseAuthFilter.java:330)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.monitoring.internal.servlet.filter.MonitoringFilter.processFilter(MonitoringFilter.java:116)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389)
+		at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:86)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:109)
+		at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:69)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+		at com.liferay.friendly.url.internal.servlet.FriendlyURLServlet.service(FriendlyURLServlet.java:554)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at com.liferay.portal.servlet.ServletAdapter.service(ServletAdapter.java:89)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at com.liferay.shielded.container.internal.proxy.ServletWrapper.service(ServletWrapper.java:103)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:117)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.init.servlet.filter.internal.InitFilter.processFilter(InitFilter.java:45)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.i18n.filter.internal.I18nFilter.processFilter(I18nFilter.java:371)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.servlet.filters.password.modified.PasswordModifiedFilter.processFilter(PasswordModifiedFilter.java:47)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.servlet.filters.lockout.LockoutFilter.processFilter(LockoutFilter.java:49)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.servlet.filters.secure.BaseAuthFilter.processFilter(BaseAuthFilter.java:330)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.servlet.filters.cache.CacheFilter.processFilter(CacheFilter.java:440)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.servlet.filters.etag.ETagFilter.processFilter(ETagFilter.java:78)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.servlet.filters.autologin.AutoLoginFilter.processFilter(AutoLoginFilter.java:253)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.monitoring.internal.servlet.filter.MonitoringFilter.processFilter(MonitoringFilter.java:116)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389)
+		at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:86)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:109)
+		at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:69)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+		at com.liferay.portal.servlet.filters.virtualhost.VirtualHostFilter.processFilter(VirtualHostFilter.java:380)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389)
+		at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:86)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:168)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:168)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:109)
+		at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:69)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+2024-07-22 01:19:45.103 ERROR [http-nio-8080-exec-1][VirtualHostFilter:383] java.lang.NullPointerException
+javax.servlet.ServletException: java.lang.NullPointerException
+	at com.liferay.portal.struts.PortalRequestProcessor._process(PortalRequestProcessor.java:388) ~[portal-impl.jar:?]
+	at com.liferay.portal.struts.PortalRequestProcessor.process(PortalRequestProcessor.java:142) ~[portal-impl.jar:?]
+	at com.liferay.portal.internal.servlet.MainServlet.doGet(MainServlet.java:194) ~[portal-impl.jar:?]
+	at javax.servlet.http.HttpServlet.doHead(HttpServlet.java:186) ~[servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:552) ~[servlet-api.jar:4.0.FR]
+	at com.liferay.portal.internal.servlet.MainServlet.service(MainServlet.java:582) ~[portal-impl.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[servlet-api.jar:4.0.FR]
+	at com.liferay.shielded.container.internal.proxy.ServletWrapper.service(ServletWrapper.java:103) ~[com.liferay.shielded.container.impl.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154) ~[catalina.jar:9.0.87]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-websocket.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154) ~[catalina.jar:9.0.87]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:117) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138) ~[portal-kernel.jar:?]
+	at com.liferay.portal.init.servlet.filter.internal.InitFilter.processFilter(InitFilter.java:45) ~[?:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.servlet.filters.password.modified.PasswordModifiedFilter.processFilter(PasswordModifiedFilter.java:47) ~[portal-impl.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.servlet.filters.lockout.LockoutFilter.processFilter(LockoutFilter.java:49) ~[portal-impl.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138) ~[portal-kernel.jar:?]
+	at com.liferay.portal.servlet.filters.secure.BaseAuthFilter.processFilter(BaseAuthFilter.java:330) ~[portal-impl.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138) ~[portal-kernel.jar:?]
+	at com.liferay.portal.monitoring.internal.servlet.filter.MonitoringFilter.processFilter(MonitoringFilter.java:116) ~[?:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176) ~[?:?]
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145) ~[?:?]
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92) ~[?:?]
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389) ~[?:?]
+	at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:86) ~[?:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:69) ~[com.liferay.shielded.container.impl.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294) ~[catalina.jar:9.0.87]
+	at com.liferay.friendly.url.internal.servlet.FriendlyURLServlet.service(FriendlyURLServlet.java:554) ~[?:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[servlet-api.jar:4.0.FR]
+	at com.liferay.portal.servlet.ServletAdapter.service(ServletAdapter.java:89) ~[portal-impl.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[servlet-api.jar:4.0.FR]
+	at com.liferay.shielded.container.internal.proxy.ServletWrapper.service(ServletWrapper.java:103) ~[com.liferay.shielded.container.impl.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154) ~[catalina.jar:9.0.87]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-websocket.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154) ~[catalina.jar:9.0.87]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:117) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138) ~[portal-kernel.jar:?]
+	at com.liferay.portal.init.servlet.filter.internal.InitFilter.processFilter(InitFilter.java:45) ~[?:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138) ~[portal-kernel.jar:?]
+	at com.liferay.portal.i18n.filter.internal.I18nFilter.processFilter(I18nFilter.java:371) ~[?:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.servlet.filters.password.modified.PasswordModifiedFilter.processFilter(PasswordModifiedFilter.java:47) ~[portal-impl.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.servlet.filters.lockout.LockoutFilter.processFilter(LockoutFilter.java:49) ~[portal-impl.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138) ~[portal-kernel.jar:?]
+	at com.liferay.portal.servlet.filters.secure.BaseAuthFilter.processFilter(BaseAuthFilter.java:330) ~[portal-impl.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138) ~[portal-kernel.jar:?]
+	at com.liferay.portal.servlet.filters.cache.CacheFilter.processFilter(CacheFilter.java:440) ~[portal-impl.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138) ~[portal-kernel.jar:?]
+	at com.liferay.portal.servlet.filters.etag.ETagFilter.processFilter(ETagFilter.java:78) ~[portal-impl.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138) ~[portal-kernel.jar:?]
+	at com.liferay.portal.servlet.filters.autologin.AutoLoginFilter.processFilter(AutoLoginFilter.java:253) ~[portal-impl.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138) ~[portal-kernel.jar:?]
+	at com.liferay.portal.monitoring.internal.servlet.filter.MonitoringFilter.processFilter(MonitoringFilter.java:116) ~[?:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176) ~[?:?]
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145) ~[?:?]
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92) ~[?:?]
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389) ~[?:?]
+	at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:86) ~[?:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:109) ~[portal-kernel.jar:?]
+	at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:69) ~[com.liferay.shielded.container.impl.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357) ~[catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294) ~[catalina.jar:9.0.87]
+	at com.liferay.portal.servlet.filters.virtualhost.VirtualHostFilter.processFilter(VirtualHostFilter.java:380) [portal-impl.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92) [portal-kernel.jar:?]
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176) [urlrewritefilter-4.0.4.jar:4.0.4]
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145) [urlrewritefilter-4.0.4.jar:4.0.4]
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92) [urlrewritefilter-4.0.4.jar:4.0.4]
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389) [urlrewritefilter-4.0.4.jar:4.0.4]
+	at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:86) [bundleFile:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:168) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:168) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:109) [portal-kernel.jar:?]
+	at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:69) [com.liferay.shielded.container.impl.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179) [catalina.jar:9.0.87]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154) [catalina.jar:9.0.87]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168) [catalina.jar:9.0.87]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [catalina.jar:9.0.87]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) [catalina.jar:9.0.87]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) [catalina.jar:9.0.87]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [catalina.jar:9.0.87]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [catalina.jar:9.0.87]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) [catalina.jar:9.0.87]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) [tomcat-coyote.jar:9.0.87]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-coyote.jar:9.0.87]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) [tomcat-coyote.jar:9.0.87]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786) [tomcat-coyote.jar:9.0.87]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-coyote.jar:9.0.87]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.87]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.87]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-util.jar:9.0.87]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.lang.NullPointerException
+	at com.liferay.portal.kernel.servlet.DirectServletPathRegisterDispatcher.forward(DirectServletPathRegisterDispatcher.java:36) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.DirectRequestDispatcherFactoryUtil$IndirectRequestDispatcher.forward(DirectRequestDispatcherFactoryUtil.java:161) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.ClassLoaderRequestDispatcherWrapper.doDispatch(ClassLoaderRequestDispatcherWrapper.java:67) ~[portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.ClassLoaderRequestDispatcherWrapper.forward(ClassLoaderRequestDispatcherWrapper.java:37) ~[portal-kernel.jar:?]
+	at com.liferay.portal.struts.StrutsUtil.forward(StrutsUtil.java:57) ~[portal-impl.jar:?]
+	at com.liferay.portal.struts.PortalRequestProcessor._internalModuleRelativeForward(PortalRequestProcessor.java:328) ~[portal-impl.jar:?]
+	at com.liferay.portal.struts.PortalRequestProcessor._process(PortalRequestProcessor.java:379) ~[portal-impl.jar:?]
+	... 164 more
+22-Jul-2024 01:19:45.131 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Error during mapping
+	java.lang.NullPointerException
+		at org.apache.catalina.mapper.Mapper.internalMapWrapper(Mapper.java:830)
+		at org.apache.catalina.mapper.Mapper.map(Mapper.java:685)
+		at org.apache.catalina.core.ApplicationContext.getRequestDispatcher(ApplicationContext.java:464)
+		at org.apache.catalina.core.ApplicationContextFacade.getRequestDispatcher(ApplicationContextFacade.java:215)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at com.liferay.portal.kernel.util.ProxyUtil$DelegateInvocationHandler.invoke(ProxyUtil.java:244)
+		at com.sun.proxy.$Proxy3.getRequestDispatcher(Unknown Source)
+		at com.liferay.friendly.url.internal.servlet.FriendlyURLServlet.service(FriendlyURLServlet.java:533)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at com.liferay.portal.servlet.ServletAdapter.service(ServletAdapter.java:89)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at com.liferay.shielded.container.internal.proxy.ServletWrapper.service(ServletWrapper.java:103)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:117)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.init.servlet.filter.internal.InitFilter.processFilter(InitFilter.java:45)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.i18n.filter.internal.I18nFilter.processFilter(I18nFilter.java:371)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.servlet.filters.password.modified.PasswordModifiedFilter.processFilter(PasswordModifiedFilter.java:47)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.servlet.filters.lockout.LockoutFilter.processFilter(LockoutFilter.java:49)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.servlet.filters.secure.BaseAuthFilter.processFilter(BaseAuthFilter.java:330)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.servlet.filters.cache.CacheFilter.processFilter(CacheFilter.java:440)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.servlet.filters.etag.ETagFilter.processFilter(ETagFilter.java:78)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.servlet.filters.autologin.AutoLoginFilter.processFilter(AutoLoginFilter.java:253)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:138)
+		at com.liferay.portal.monitoring.internal.servlet.filter.MonitoringFilter.processFilter(MonitoringFilter.java:116)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389)
+		at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:86)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:109)
+		at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:69)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+		at com.liferay.portal.servlet.filters.virtualhost.VirtualHostFilter.processFilter(VirtualHostFilter.java:380)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389)
+		at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:86)
+		at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:40)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:168)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:168)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92)
+		at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:109)
+		at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:69)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+22-Jul-2024 03:49:52.786 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [620] milliseconds
+Loading jar:file:/home/orng/Documents/sample-liferay-workspace/bundles/tomcat/webapps/ROOT/WEB-INF/shielded-container-lib/portal-impl.jar!/system.properties
+Loading jar:file:/home/orng/Documents/sample-liferay-workspace/bundles/tomcat/webapps/ROOT/WEB-INF/shielded-container-lib/portal-impl.jar!/portal.properties
+Loading file:/home/orng/Documents/sample-liferay-workspace/bundles/portal-ext.properties
+Loading file:/home/orng/Documents/sample-liferay-workspace/bundles/portal-setup-wizard.properties
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+2024-07-22 03:49:54.598 INFO  [main][PortalContextLoaderListener:114] JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/home/orng/Documents/sample-liferay-workspace/bundles/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/home/orng/Documents/sample-liferay-workspace/bundles/tomcat -Dcatalina.home=/home/orng/Documents/sample-liferay-workspace/bundles/tomcat -Djava.io.tmpdir=/home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp
+2024-07-22 03:49:56.902 WARN  [SystemExecutorServiceUtil-1][DialectDetector:73] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.
+2024-07-22 03:49:56.905 INFO  [SystemExecutorServiceUtil-1][DialectDetector:144] Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.7
+2024-07-22 03:49:57.041 INFO  [main][ModuleFrameworkImpl:1352] Starting initial bundles
+2024-07-22 03:49:57.358 INFO  [SystemExecutorServiceUtil-1][InterpolationConfigurationPlugin:109] Configured directory for secrets: /home/orng/Documents/sample-liferay-workspace/bundles/osgi/configs
+2024-07-22 03:49:57.726 INFO  [main][ModuleFrameworkImpl:1642] Started initial bundles
+2024-07-22 03:49:57.726 INFO  [main][ModuleFrameworkImpl:1687] Starting dynamic bundles
+2024-07-22 03:49:58.841 WARN  [Start Level: Equinox Container: a96c83bd-2e40-42f2-b221-8d09bfc694b8][SidecarManager:72] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2024-07-22 03:50:02.222 INFO  [main][ModuleFrameworkImpl:1710] Started dynamic bundles
+2024-07-22 03:50:02.234 INFO  [main][ModuleFrameworkImpl:1717] Starting web bundles
+2024-07-22 03:50:03.280 INFO  [main][ModuleFrameworkImpl:1771] Started web bundles
+2024-07-22 03:50:03.280 INFO  [main][ModuleFrameworkImpl:283] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+
+    __    ____________________  _____  __
+   / /   /  _/ ____/ ____/ __ \/   \ \/ /
+  / /    / // /_  / __/ / /_/ / /| |\  /
+ / /____/ // __/ / /___/ _, _/ ___ |/ /
+/_____/___/_/   /_____/_/ |_/_/  |_/_/
+
+Starting Liferay Community Edition Portal 7.4.3.120 CE GA120 (June 12, 2024)
+
+2024-07-22 03:50:04.403 INFO  [main][StartupHelperUtil:97] There are no patches installed
+2024-07-22 03:50:04.541 INFO  [main][LoggingTimer:74] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2024-07-22 03:50:04.574 INFO  [main][LoggingTimer:35] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 32 ms
+2024-07-22 03:50:05.142 INFO  [main][AutoDeployDir:152] Auto deploy scanner started for /home/orng/Documents/sample-liferay-workspace/bundles/deploy
+2024-07-22 03:50:10.507 INFO  [SystemExecutorServiceUtil-5][Sidecar:103] Sidecar Elasticsearch liferay started at 127.0.0.1:9201
+2024-07-22 03:50:13.522 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240722035013390FBNLEAOK/admin-theme.war
+2024-07-22 03:50:14.352 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240722035013390FBNLEAOK/admin-theme.war copied successfully
+22-Jul-2024 03:50:14.536 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [21744] milliseconds
+2024-07-22 03:50:17.313 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240722035017299QFYZYDZG/classic-theme.war
+2024-07-22 03:50:17.803 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240722035017299QFYZYDZG/classic-theme.war copied successfully
+2024-07-22 03:50:19.460 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240722035019453SBTJLEIJ/dialect-theme.war
+2024-07-22 03:50:20.214 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240722035019453SBTJLEIJ/dialect-theme.war copied successfully
+2024-07-22 03:50:21.794 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240722035021779GTHIKWBN/minium-theme.war
+2024-07-22 03:50:22.352 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240722035021779GTHIKWBN/minium-theme.war copied successfully
+2024-07-22 03:50:23.420 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240722035023409PGNUUIUW/speedwell-theme.war
+2024-07-22 03:50:23.733 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /home/orng/Documents/sample-liferay-workspace/bundles/tomcat/temp/20240722035023409PGNUUIUW/speedwell-theme.war copied successfully
